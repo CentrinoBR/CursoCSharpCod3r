@@ -21,6 +21,7 @@ namespace CursoCSharpCod3r
                 {$"Formatando numeros{fundamentos}", FormantandoNumero.Executar},
                 {$"Conversões{fundamentos}", Conversoes.Executar},
                 {$"Operadores aritiméticos{fundamentos}", OperadoresAritimeticos.Executar},
+                {$"Operadores relacionais{fundamentos}", OperadoresRelacionais.Executar},
             });
 
             central.SelecionarEExecutar();
