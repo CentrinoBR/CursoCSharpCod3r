@@ -3,18 +3,23 @@ using System.Collections.Generic;
 
 using CursoCSharpCod3r.Fundamentos;
 
-namespace CursoCSharpCod3r {
-    class Program {
-        static void Main(string[] args) {
+namespace CursoCSharpCod3r
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string fundamentos = " - Fundamentos";
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
-                {"Primeiro programa - Fundamentos", PrimeiroPrograma.Executar},
-                {"Comentário - Fundamentos", Comentarios.Executar},
-                {"Variáveis e constantes - Fundamentos", VariaveisEConstantes.Executar},
-                {"Inferencia - Fundamentos", Inferencia.Executar},
-                {"Interpolação - Fundamentos", Interpolacao.Executar},
-                {"Notação ponto - Fundamentos", NotacaoPonto.Executar},
-                {"Lendo dados - Fundamentos", LendoDados.Executar},
-                {"Formatando numeros - Fundamentos", FormantandoNumero.Executar},
+                {$"Primeiro programa{fundamentos}", PrimeiroPrograma.Executar},
+                {$"Comentário{fundamentos}", Comentarios.Executar},
+                {$"Variáveis e constantes{fundamentos}", VariaveisEConstantes.Executar},
+                {$"Inferencia{fundamentos}", Inferencia.Executar},
+                {$"Interpolação{fundamentos}", Interpolacao.Executar},
+                {$"Notação ponto{fundamentos}", NotacaoPonto.Executar},
+                {$"Lendo dados{fundamentos}", LendoDados.Executar},
+                {$"Formatando numeros{fundamentos}", FormantandoNumero.Executar},
+                {$"Conversões{fundamentos}", Conversoes.Executar},
             });
 
             central.SelecionarEExecutar();
